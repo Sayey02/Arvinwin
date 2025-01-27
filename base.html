@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ارائه خدمات نصب، تعمیر و نگهداری پکیج با بهترین قیمت‌ها و کیفیت.">
+  <meta name="keywords" content="پکیج, نصب پکیج, تعمیر پکیج, نگهداری پکیج, خدمات پکیج">
+  <link rel="stylesheet" href="BASE.css">
+  <title>Arvinwin - خدمات پکیج</title>
+</head>
+
+<body>
+  <header>
+    <h1>خوش آمدید به Arvinwin</h1>
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#shop">فروشگاه قطعات</a>
+      <a href="#services" onclick="toggleSidebar()">درخواست خدمات</a>
+      <a href="#about">درباره ما</a>
+      <a href="#testimonials">نظرات مشتریان</a>
+      <a href="#blog">وبلاگ</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+  </header>
+
+  <div class="to">
+    <p class="khada">
+      خدمات پکیج حرفه‌ای و مطمئن با بهترین قیمت‌ها. ما بهترین تکنسین‌ها را برای نصب، تعمیر و نگهداری پکیج‌های شما ارائه می‌دهیم. با ما تماس بگیرید و از خدمات بی‌نظیر ما بهره‌مند شوید.
+    </p>
+    <p>
+      ما با ارائه خدمات سریع و با کیفیت، رضایت مشتریان را تضمین می‌کنیم. تیم ما از تکنسین‌های مجرب و حرفه‌ای تشکیل شده است که با استفاده از تجهیزات پیشرفته، بهترین خدمات را به شما ارائه می‌دهند. همچنین، با ارائه تخفیف‌های ویژه و قیمت‌های رقابتی، تلاش می‌کنیم تا خدمات ما برای همه قابل دسترس باشد.
+    </p>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <h2>سفارش خدمات</h2>
+    <a href="#service1">خدمات نصب</a>
+    <a href="#service2">خدمات تعمیر</a>
+    <a href="#service3">خدمات نگهداری</a>
+    <a href="#services">درخواست خدمات</a>
+  </div>
+
+  <div class="content">
+    <section id="about">
+      <h2>درباره ما</h2>
+      <p>ما یک تیم حرفه‌ای هستیم که در زمینه نصب، تعمیر و نگهداری پکیج‌ها فعالیت می‌کنیم. با سال‌ها تجربه و استفاده از بهترین تجهیزات، خدمات با کیفیتی به مشتریان ارائه می‌دهیم.</p>
+    </section>
+
+    <section id="services">
+      <h2>درخواست خدمات</h2>
+      <form>
+        <input type="text" placeholder="نام شما" required>
+        <input type="email" placeholder="ایمیل شما" required>
+        <input type="tel" placeholder="شماره تماس شما" required>
+        <textarea placeholder="پیام شما" required></textarea>
+        <button type="submit">ارسال درخواست</button>
+      </form>
+    </section>
+
+    <section id="testimonials">
+      <h2>نظرات مشتریان</h2>
+      <div class="testimonial">
+        <p>"خدمات بسیار عالی و سریع. تکنسین‌ها بسیار حرفه‌ای بودند."</p>
+        <span>- علی رضایی</span>
+      </div>
+      <div class="testimonial">
+        <p>"قیمت‌ها بسیار رقابتی و کیفیت کار عالی بود."</p>
+        <span>- مریم حسینی</span>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>وبلاگ</h2>
+      <div class="blog-post">
+        <h3>چگونه پکیج خود را نگهداری کنیم؟</h3>
+        <p>در این مقاله به شما آموزش می‌دهیم چگونه پکیج خود را به بهترین شکل نگهداری کنید.</p>
+        <a href="#blog-post-1">ادامه مطلب</a>
+      </div>
+      <div class="blog-post">
+        <h3>علائم خرابی پکیج چیست؟</h3>
+        <p>در این مقاله به بررسی علائم خرابی پکیج و راه‌های تشخیص آن می‌پردازیم.</p>
+        <a href="#blog-post-2">ادامه مطلب</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>تمامی حقوق محفوظ است &copy; 2023 Arvinwin</p>
+    <div class="social-links">
+      <a href="#instagram">اینستاگرام</a>
+      <a href="#telegram">تلگرام</a>
+      <a href="#linkedin">لینکدین</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
