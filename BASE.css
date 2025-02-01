@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Vazir', Arial, sans-serif;
-  background-image: url('خذمات\ پکیج.png');
+  background-image: url('basepic/خذمات\ پکیج.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -36,6 +36,7 @@ header nav a {
   text-decoration: none;
   margin: 0 15px;
   font-size: 1.2em;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -44,12 +45,14 @@ header nav a:hover {
 }
 
 .menu-toggle {
-  display: none;
   background: none;
   border: none;
   color: white;
   font-size: 1.5em;
   cursor: pointer;
+  position: absolute;
+  left: 50px; /* Move to the right */
+  top: 50px;
 }
 
 .to {
@@ -58,7 +61,6 @@ header nav a:hover {
   border-radius: 15px;
   padding: 20px;
   max-width: 50%;
-  margin-left: auto;
   margin-right: 0;
   margin-top: 30px;
   animation: fadeIn 2s ease-in;
@@ -66,26 +68,20 @@ header nav a:hover {
 
 .sidebar {
   position: fixed;
-  left: 0;
+  right: -250px; /* Move to the right */
   top: 0;
   width: 250px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Adjust shadow */
   z-index: 2;
-  transition: left 0.3s ease;
+  transition: right 0.3s ease; /* Change to right */
 }
 
-@media (max-width: 768px) {
-  .sidebar {
-    left: -250px;
-  }
-
-  .sidebar.open {
-    left: 0;
-  }
+.sidebar.open {
+  right: 0; /* Change to right */
 }
 
 .sidebar h2 {
@@ -261,12 +257,10 @@ footer {
 
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: block; /* در دستگاه‌های کوچک، آیکون منو نمایش داده شود */
   }
 
-  .to {
-    max-width: 90%;
-    margin: 20px auto;
-
+  header nav {
+    display: none; /* منوی اصلی در دستگاه‌های کوچک پنهان شود */
   }
 }
